@@ -2,6 +2,7 @@ import { useState } from "react"
 import HomeCount from "./Component/HomeCount"
 import { useDispatch, useSelector } from 'react-redux';
 import { addpayload, decrement,increment } from "./features/CountSlice";
+import Profile from "./component/Profile";
 
 
 
@@ -46,6 +47,7 @@ function App() {
       <button onClick={handlepayload}>Add</button>
 
       <HomeCount></HomeCount>
+      <Profile></Profile>
     </>
   )
 }
