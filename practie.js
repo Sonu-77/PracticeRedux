@@ -314,12 +314,105 @@ const objva = { a: 1,b:80,c:90 };
 
 let q = 5;  // binary: 0101
 let w = 3;  // binary: 0011
-console.log(q & w);  // binary: 0001 => output: 1
+// console.log(q & w);  // binary: 0001 => output: 1
 
 
 let ab = 5;  // binary: 0101
 let bc = 3;  // binary: 0011
-console.log(ab | bc);  // binary: 0111 => output: 7
+// console.log(ab | bc);  // binary: 0111 => output: 7
 
 
 
+// let array = new Array(['sonu','kachhap']);
+
+
+const array = Array.from("sonu")
+// console.log(array.at(2));
+
+let arr9 = [1, 2];
+let arr2 = [3, 4];
+
+// console.log(typeof(arr9+arr2));
+// console.log(typeof[...arr9,...arr2]);
+
+let copy = [1,2,4,5,6,7,8,9,3]
+
+// console.log(copy.copyWithin(1,2))  //4,5,6,7,8,9,3
+
+// console.log(copy);
+
+let ite = copy.entries()
+// console.log(ite.next().value);
+
+// console.log(ite.next());
+// console.log(typeof(ite.next()));
+// console.log(ite.next());
+// console.log(ite.next());
+let arrfl = [1, [2, [3,[1,2,[3,4,[5]]], 4]]];
+let flatArr = arrfl.flat(Infinity); // [1, 2, 3, 4]
+// let flama = flatArr.flatMap((num)=>[[num,num-1]])
+// console.log((flama));
+// console.log(flatArr);
+
+let check = []
+
+// console.log(typeof(check));
+
+let arrjoi = ['Hello', 'World'];
+let str = arrjoi.join('-'); // 'Hello World'
+// console.log(str);
+
+let arrkey = ['a', 'b', 'c'];
+// let iterator = arrkey.values(); 
+// console.log(iterator.next())
+// console.log(iterator.next())
+// console.log(iterator.next())
+// console.log(iterator.next())
+
+
+let arrso = [3, 1, 2];
+// arrso.sort((a,b)=>a-b); // [1, 2, 3]
+// console.log(arrso.toReversed());
+
+let datse = new Date ()
+
+// console.log(datse.toLocaleString());
+
+
+let dates = new Date(); // Current date and time
+let specificDate = new Date('2024-10-18'); // Specific date
+let dateFromTimestamp = new Date(1683100000000); // Date from a timestamp
+
+// console.log(dates);
+// console.log(specificDate);
+// console.log(dateFromTimestamp);
+
+// console.log(dates);
+// console.log(dates.getFullYear());
+// console.log(dates.getMonth());
+// console.log(dates.getDay());
+// console.log(dates.getDate());
+// console.log(dates.getHours(),dates.getMinutes(),dates.getSeconds());
+// console.log(dates.toString());
+// console.log(dates.getTimezoneOffset());
+// console.log(dates.toUTCString());
+// console.log(dates.toJSON());
+
+
+const targe1t = { a: 1 };
+
+targe1t.a=60
+// console.log(targe1t);
+
+let cop= {...targe1t}
+cop.a=30
+// console.log(cop);
+
+const obaj = { a: 1, b: 2, c: 3 };
+
+// console.log(Array.from(Object.entries(obaj)));
+
+const as = [[1,2],[3,4],[5,6]]
+let s = Object.fromEntries(as)
+
+console.log(s);
